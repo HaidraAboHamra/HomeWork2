@@ -114,6 +114,9 @@ namespace HomeWork2
         public void PrintList()
         {
             Node current = head;
+            try
+            {
+
             while (current != null)
             {
                 // Print different types of data
@@ -137,6 +140,11 @@ namespace HomeWork2
                 current = current.Next;
             }
             Console.WriteLine("null");
+            }
+            catch
+            {
+                Console.WriteLine("Please Delete The List");
+            }
         }
     }
 }
